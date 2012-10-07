@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Getting Started Extension's Popup</title>
+		<meta charset='utf-8' />
+		
+		<style>
+			body {
+			min-width:357px;
+			overflow-x:hidden;
+			font-size: 12px;
+			font-family: Tahoma,Simsun;
+			color: #333;
+			}
+			.sdi {
+			position: relative;
+			width: auto;
+			height: 20px;
+			line-height: 20px;
+			white-space: nowrap;
+			word-break: keep-all;
+			overflow: hidden;}
+			.sdiw {
+			text-align: left;
+			float: left;
+			width: auto;
+			white-space: nowrap;
+			word-break: keep-all;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			}
+			.sdim {
+			text-align: right;
+			float: right;
+			width: 38%;
+			padding-left: 5px;
+			white-space: nowrap;
+			word-break: keep-all;
+			text-overflow: ellipsis;
+			-o-text-overflow: ellipsis;
+			overflow: hidden;
+			}
+			.HPsearchbox {
+			margin-top: 28px;
+			height: 34px;
+			width: 519px;
+			background: url(images/searchbox.png) center no-repeat;
+			}
+			.queryInput {
+			width: 415px;
+			height: 18px;
+			margin: 10px 0px 0px 12px;
+			font-size: 14px;
+			padding: 0px;
+			border: 0px;
+			font-family: Tahoma;
+			}
+			.querySubmit {
+			background: transparent;
+			width: 70px;
+			height: 34px;
+			border: 0px;
+			margin: 0px;
+			cursor: pointer;
+			}
+			input,button,select,textarea{outline:none}
+
+			.sdiw span {
+			color: #1C79C8;
+			font-weight: bold;
+			}
+			#exemption{
+			color:#C9B7B7;
+			float:right;
+			width:190px;
+			margin:10px auto 5px;
+			}
+
+
+		</style>
+
+	</head>
+	<body>
+		<div class='HPsearchbox'>
+			<input type="text" class='queryInput' autocomplete="off" maxlength="100" id="queryInput" />
+			<input class="querySubmit" type="submit" value="" click="" hidefocus="true" onfocus="this.blur()" >
+		</div>
+		<div id="container"></div>
+		<script src="popup.js"></script>
+		<div id='exemption'>数据来自<a href="http://dict.qq.com">QQ词典</a></div>
+	</body>
+</html>
